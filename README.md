@@ -34,3 +34,11 @@ Cek versi .NET:
 
 ```bash
 dotnet --version
+
+# How To start project
+git clone https://github.com/mrpwt/Assessment-AGIT_NurRafifSaktiPratama.git
+cd Assessment-AGIT_NurRafifSaktiPratama
+dotnet restore
+dotnet build
+dotnet ef database update --project src/Assessment.Api --startup-project src/Assessment.Api
+dotnet run --project src/Assessment.Api
